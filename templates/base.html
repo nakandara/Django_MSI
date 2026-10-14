@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+   <h1>navbar</h1>
+   <img src="{% static 'images/The Mermaid and the Secret Pearl (1)' %}" alt="Django Logo">
+   {% block content %}{% endblock content %}
+
+   <h1>footer</h1>
+</body>
+</html>
